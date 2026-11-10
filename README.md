@@ -1,4 +1,4 @@
-# Embedded Intelligence Water-Tank Monitoring & Control Dashboard
+# DPE316D Water-Tank Monitoring & Control Dashboard
 
 This repository contains a React dashboard for monitoring and simulating water-tank systems driven by **ATmega328P** or **ESP32-S3** hardware platforms. The current app runs in the browser and does not require a separate backend.
 
