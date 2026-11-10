@@ -33,6 +33,12 @@ This repository contains a React dashboard for monitoring and simulating water-t
 4. Ensure `node_modules` is not committed; install dependencies from `package-lock.json` during deployment.
 5. Deploy. The included `vercel.json` sends app routes to `index.html` so client-side routes load correctly.
 
+### Telemetry API
+
+The Vercel function at `https://<your-vercel-domain>/api/telemetry` accepts `POST` requests with an `application/json` body. It allows cross-origin requests without browser credentials and handles `OPTIONS` preflight requests. Send `device_id`, `water_level_pct` (0–100), `battery_v` (0–20), `valve_state` (0/1 or boolean), `estop` (0/1 or boolean), and a parseable `timestamp`. `volume_litres` and `raw_adc_v` are optional.
+
+The endpoint is unauthenticated and accepts requests from any origin; CORS is not authentication. It validates and acknowledges telemetry, but does not store it or stream it to the dashboard. The dashboard continues to use its local simulator until persistence and live frontend updates are implemented.
+
 To verify a production build locally, run:
 
 ```bash
