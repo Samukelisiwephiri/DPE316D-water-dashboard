@@ -365,9 +365,11 @@ export default function App() {
       <header className="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-40 px-4 py-3 flex flex-wrap items-center justify-between gap-3 shadow-lg">
         {/* Left Title & Hardware Specs */}
         <div className="flex items-center space-x-3">
-          <div className="p-2 rounded-xl bg-cyan-500/10 border border-cyan-500/30 text-cyan-400">
-            <Cpu className="w-6 h-6 animate-pulse" />
-          </div>
+          <img
+            src="/tshwane-university-logo.png"
+            alt="Tshwane University of Technology"
+            className="h-12 w-12 object-contain"
+          />
           <div>
             <h1 className="font-bold text-lg leading-tight tracking-wide text-slate-100 flex items-center gap-2">
               DPE316D Water-Tank Hub
