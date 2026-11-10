@@ -30,7 +30,8 @@ This repository contains a React dashboard for monitoring and simulating water-t
 1. Import this project repository in Vercel.
 2. Keep the project root set to the folder containing `package.json`.
 3. Use the detected Vite settings, or set the build command to `npm run build` and the output directory to `dist`.
-4. Deploy. The included `vercel.json` sends app routes to `index.html` so client-side routes load correctly.
+4. Ensure `node_modules` is not committed; install dependencies from `package-lock.json` during deployment.
+5. Deploy. The included `vercel.json` sends app routes to `index.html` so client-side routes load correctly.
 
 To verify a production build locally, run:
 
